@@ -3,6 +3,9 @@ package com.corndel.hackulator;
 public class MaxOfThree {
 
   static int maxOfThree(int x, int y, int z) {
+    if (x == y && y == z){
+      return x;
+    }
     if (x > y && x > z) {
       return x;
     }
