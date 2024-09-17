@@ -13,14 +13,15 @@ public class Subtract {
    * <p>subtract(-2, 4) => 6
    */
   static int subtract(int x, int y) {
-    if (x < y) {
-      return y - x;
-    }
+    // if (x < y) {
+    //   return y - x;
+    // }
 
-    if (y < x) {
-      return x - y;
-    }
+    // if (y < x) {
+    //   return x - y;
+    // }
+    return Math.abs(x - y);
 
-    throw new Error("Is this reachable?");
+    //throw new Error("Is this reachable?");
   }
 }
